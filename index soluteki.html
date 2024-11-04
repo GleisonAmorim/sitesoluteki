@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluteki - Transforme a Gestão do Seu Negócio</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* Cabeçalho */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #4C9F70;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #E5F4EA;
+        }
+
+        /* Seção Principal */
+        .main-section {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #E5F4EA, #fff);
+        }
+
+        .main-section h1 {
+            font-size: 2.8em;
+            color: #4C9F70;
+        }
+
+        .main-section p {
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 30px;
+            background-color: #4C9F70;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #3A7E5B;
+        }
+
+        /* Seções de Serviços */
+        .services-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 60px 20px;
+            background-color: #F4F6F9;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            font-size: 1.5em;
+            color: #4C9F70;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Rodapé */
+        footer {
+            padding: 20px;
+            background-color: #4C9F70;
+            color: white;
+            text-align: center;
+        }
+
+        /* Responsivo */
+        @media (min-width: 768px) {
+            .service-card {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="imgs/logo.png" alt="Logo Soluteki">
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <section class="main-section">
+        <h1>Transforme a Gestão do Seu Negócio com o Bling + Soluteki!</h1>
+        <p>Implantação e Suporte Personalizados para o Bling ERP e muito mais!</p>
+        <a href="#" class="cta-button">Entre em Contato</a>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section class="services-section">
+        <div class="service-card">
+            <h3>🌟 Comércio</h3>
+            <p>Maximize suas vendas e e-commerce! Suporte especializado para integrar lojas físicas e virtuais, gestão
+                de frente de caixa e notas fiscais.</p>
+        </div>
+        <div class="service-card">
+            <h3>🔧 Serviços</h3>
+            <p>Gestão de ordens de serviço e contratos simplificados. Emissão de NFSe e controle de contratos com
+                eficiência.</p>
+        </div>
+        <div class="service-card">
+            <h3>🏭 Indústria</h3>
+            <p>Automatize a produção e controle de estoque em tempo real. Suporte para gestão de inventário e
+                movimentação de produtos.</p>
+        </div>
+        <div class="service-card">
+            <h3>📘 Treinamento Especializado</h3>
+            <p>Capacitação prática da equipe, domínio completo do Bling ERP com materiais de apoio e suporte
+                pós-treinamento.</p>
+        </div>
+        <div class="service-card">
+            <h3>🔍 Consultoria e Suporte</h3>
+            <p>Atendimento remoto por 30 dias, solução de problemas operacionais e consultoria personalizada para seu
+                negócio.</p>
+        </div>
+        <div class="service-card">
+            <h3>💬 Grupo Soluteki Ajuda</h3>
+            <p>Dicas no grupo Soluteki Ajuda no WhatsApp, com soluções e orientações práticas.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Soluteki - Todos os direitos reservados.</p>
+        <p>Transforme sua gestão e leve seu negócio ao próximo nível com a Soluteki!</p>
+    </footer>
+
+    <!-- JavaScript simples para interatividade -->
+    <script>
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Obrigado pelo interesse! Entraremos em contato em breve.');
+            });
+        });
+    </script>
+</body>
+
+</html>
